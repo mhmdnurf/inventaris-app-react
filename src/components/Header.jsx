@@ -16,7 +16,7 @@ const Header = () => {
         </p>
       </div>
       <p className="ml-8 font-medium text-zinc-500">
-        Welcome Back, Fichry Kosandi
+        Welcome Back, Ayu Emeliana Pratiwi
       </p>
     </>
   );
