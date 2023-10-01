@@ -1,7 +1,7 @@
 const MainLayout = ({ children }) => {
   return (
     <>
-      <div className="min-w-screen flex min-h-screen bg-slate-100">
+      <div className="min-w-screen flex min-h-screen bg-gray-100">
         {children}
       </div>
     </>

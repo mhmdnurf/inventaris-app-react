@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import MainLayout from "../components/layout/MainLayout";
 import ContentLayout from "../components/layout/ContentLayout";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 import DashboardCard from "../components/dashboard/DashboardCard";
 import DashboardExtend from "../components/dashboard/DashboardExtend";
 import DashboardContent from "../components/dashboard/DashboardContent";
@@ -19,19 +19,19 @@ const Dashboard = () => {
   return (
     <>
       <MainLayout>
-        <Sidebar />
-        {isLoading ? (
-          <Loader />
-        ) : (
-          <>
-            <ContentLayout>
-              <Header />
+        <ContentLayout>
+          <Navbar />
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              <Header title="Dashboard" />
               <DashboardCard />
               <DashboardExtend />
               <DashboardContent />
-            </ContentLayout>
-          </>
-        )}
+            </>
+          )}
+        </ContentLayout>
       </MainLayout>
     </>
   );

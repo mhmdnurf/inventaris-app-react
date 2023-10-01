@@ -1,9 +1,11 @@
-const Header = () => {
+import DashboardUser from "../components/dashboard/DashboardUser";
+
+const Header = ({ title }) => {
   return (
     <>
       <div className="flex">
         <h1 className="mx-8 mt-8 text-xl font-extrabold text-zinc-600 ">
-          Dashboard
+          {title}
         </h1>
         <div className="flex-grow" />
         <p className="mr-4 mt-8 self-end text-xl font-medium text-zinc-600">
@@ -15,9 +17,7 @@ const Header = () => {
           }).format(new Date())}
         </p>
       </div>
-      <p className="ml-8 font-medium text-zinc-500">
-        Welcome Back, Ayu Emeliana Pratiwi
-      </p>
+      <DashboardUser username="Ayu Emeliana Pratiwi" />
     </>
   );
 };

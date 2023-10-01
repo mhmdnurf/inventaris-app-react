@@ -5,7 +5,7 @@ const DashboardContent = () => {
   return (
     <>
       <div className="mb-10 flex flex-wrap p-2 ">
-        <div className="mt-4 grow rounded-lg border-2 p-4 sm:mr-2">
+        <div className="mt-4 grow rounded-lg border-2 bg-white p-4 sm:mr-2">
           <h1 className="mb-4 mt-2 text-sm font-bold uppercase text-zinc-400">
             Recent Activity
           </h1>
